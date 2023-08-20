@@ -4,17 +4,17 @@ import { Observable } from 'rxjs';
 import { Patient } from './patient';
 
 @Injectable({
-  providedIn: 'root'
+providedIn: 'root'
 })
 export class PatientService {
 
-  private baseURL = "http://localhost:8080/api/pms/patients";
-  constructor(private httpClient: HttpClient) { }
+private baseURL = "http://localhost:8080/api/pms/patients";
+constructor(private httpClient: HttpClient) { }
 
-  getPatientsList(): Observable<Patient[]> {
+getPatientsList(): Observable<Patient[]> {
 
-    return this.httpClient.get<Patient[]>(`${this.baseURL}`);
+return this.httpClient.get<Patient[]>(`${this.baseURL}`);
 
 
-  }
+}
 }
