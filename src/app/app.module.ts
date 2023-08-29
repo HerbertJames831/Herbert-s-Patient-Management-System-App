@@ -5,16 +5,20 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PatientListComponent } from './patient-list/patient-list.component';
+import { CreatePatientComponent } from './create-patient/create-patient.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
 declarations: [
 AppComponent,
-PatientListComponent
+PatientListComponent,
+CreatePatientComponent
 ],
 imports: [
 BrowserModule,
 AppRoutingModule,
 HttpClientModule,
+FormsModule,
 CommonModule
 ],
 providers: [],
