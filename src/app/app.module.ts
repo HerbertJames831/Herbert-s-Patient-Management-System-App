@@ -5,11 +5,13 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PatientListComponent } from './patient-list/patient-list.component';
+import { CreatePatientComponent } from './create-patient/create-patient.component';
 
 @NgModule({
 declarations: [
 AppComponent,
-PatientListComponent
+PatientListComponent,
+CreatePatientComponent
 ],
 imports: [
 BrowserModule,
