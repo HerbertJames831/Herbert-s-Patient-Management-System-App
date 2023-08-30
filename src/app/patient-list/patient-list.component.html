@@ -13,6 +13,7 @@
 <th scope="col">Email Address</th>
 <th scope="col">Address</th>
 <th scope="col">Medical History</th>
+<th scope="col">Operations</th>
 
 </tr>
 
@@ -29,6 +30,11 @@
 <td>{{patient.emailAddress}}</td>
 <td>{{patient.address}}</td>
 <td>{{patient.medicalHistory}}</td>
+<td>
+
+<button (click) = "updatePatient(patient.patientId)" class="btn btn-primary">Update</button>
+<button (click) = "deletePatient(patient.patientId)" class="btn btn-info" style="margin-left: 80px; margin-top: -65px; margin-right: 17px;">Delete</button>
+</td>
 
 </tr>
 </tbody>
