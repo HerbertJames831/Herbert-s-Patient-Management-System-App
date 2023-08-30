@@ -9,6 +9,10 @@ import { CreatePatientComponent } from './create-patient/create-patient.componen
 import { FormsModule } from '@angular/forms';
 import { UpdatePatientComponent } from './update-patient/update-patient.component';
 import { PatientDetailsComponent } from './patient-details/patient-details.component';
+import { UpdateAppointmentComponent } from './update-appointment/update-appointment.component';
+import { AppointmentListComponent } from './appointment-list/appointment-list.component';
+import { AppointmentDetailsComponent } from './appointment-details/appointment-details.component';
+import { CreateAppointmentComponent } from './create-appointment/create-appointment.component';
 
 @NgModule({
 declarations: [
@@ -16,7 +20,11 @@ AppComponent,
 PatientListComponent,
 CreatePatientComponent,
 UpdatePatientComponent,
-PatientDetailsComponent
+PatientDetailsComponent,
+UpdateAppointmentComponent,
+AppointmentListComponent,
+AppointmentDetailsComponent,
+CreateAppointmentComponent
 ],
 imports: [
 BrowserModule,

@@ -1,0 +1,77 @@
+<div class="col-md-6 offset-md-3">
+<h2>Update Patient's Appointment</h2>
+<form (ngSubmit) = "onSubmit()">
+
+<div class="form-group">
+
+<label style="font-weight: 600;">Patient Name</label>
+<input type="text" class="form-control" id="patientName"
+     [(ngModel)]="appointment.patientName" name="patientName">
+
+</div>
+
+<br>
+
+<div class="form-group">
+
+    <label style="font-weight: 600;">Doctor Name</label>
+    <input type="text" class="form-control" id="doctorName"
+         [(ngModel)]="appointment.doctorName" name="doctorName">
+    
+    </div>
+
+    <br>
+
+    <div class="form-group">
+
+        <label style="font-weight: 600;">Appointment Date</label>
+        <input type="text" class="form-control" id="appointmentDate"
+             [(ngModel)]="appointment.appointmentDate" name="appointmentDate">
+        
+        </div>
+
+        <br>
+
+        <div class="form-group">
+
+            <label style="font-weight: 600;">Appointment Time</label>
+            <input type="text" class="form-control" id="appointmentTime"
+                 [(ngModel)]="appointment.appointmentTime" name="appointmentTime">
+            
+            </div>
+
+            <br>
+
+            <div class="form-group">
+
+                <label style="font-weight: 600;">Appointment Reason</label>
+                <input type="text" class="form-control" id="appointmentReason"
+                     [(ngModel)]="appointment.appointmentReason" name="appointmentReason">
+                
+                </div>
+
+                <br>
+
+                <button class="btn btn-primary" type="submit">Submit</button>
+                
+            
+
+</form>
+
+<br>
+
+
+
+ 
+
+
+
+
+
+
+<!-- appointmentId: number = 0;
+patientName: String = '';
+doctorName: String = '';
+appointmentDate: Date = new Date();
+appointmentTime: String = '';
+appointmentReason: String = ''; -->

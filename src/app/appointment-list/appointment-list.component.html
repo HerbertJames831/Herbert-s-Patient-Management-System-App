@@ -1,0 +1,57 @@
+<h2>List of Appointments</h2>
+
+<table class="table table-bordered">
+
+
+<thead>
+
+<tr class="table-primary">
+
+<th scope="col">Patient Name</th>
+<th scope="col">Doctor Name</th>
+<th scope="col">Appointment Date</th>
+<th scope="col">Appointment Time</th>
+<th scope="col">Appointment Reason</th>
+<th scope="col">Operations</th>
+
+
+</tr>
+ 
+</thead>
+
+<tbody>
+
+<tr *ngFor="let appointment of appointments">
+
+<td>{{appointment.patientName}}</td>
+<td>{{appointment.doctorName}}</td>
+<td>{{appointment.appointmentDate}}</td>
+<td>{{appointment.appointmentTime}}</td>
+<td>{{appointment.appointmentReason}}</td>
+
+<td>
+<button (click) = "update_Appointment(appointment.appointmentId)" class="btn btn-primary">Update</button>
+<button (click) = "delete_Appointment(appointment.appointmentId)" class="btn btn-info" style="margin-left: 69px; margin-top: 31px; margin-bottom: 29px; margin-right: 17px;">Delete</button>
+<button (click) = "appointmentDetails(appointment.appointmentId)" class="btn btn-dark" style="margin-left: 80px; margin-top: -98px; margin-bottom: 27px; margin-right: 200px; background-color: blue;">View</button>
+    <!-- delete_Appointment -->
+    <!-- update_Appointment -->
+    <!-- appointmentDetails -->
+
+</td>
+
+
+
+</tr>
+
+<!-- appointmentId: number = 0;
+patientName: String = '';
+doctorName: String = '';
+appointmentDate: Date = new Date();
+appointmentTime: String = '';
+appointmentReason: String = ''; -->
+
+</tbody>
+
+</table>
+
+
