@@ -1,0 +1,45 @@
+
+<app-current-date></app-current-date>
+<nav class="navbar navbar-expand-lg" style="background-color: aqua;">
+    <ul class = "navbar-nav">
+
+    <li class="nav-item">
+
+    <a style="font-weight: 744; font-size: x-large;"  routerLink="patients" routerLinkActive="active" class="nav-link">Patient List</a>
+    </li>
+
+    <li class="nav-item">
+
+    <a style="font-weight: 744; font-size: x-large;"  routerLink="create-patient" routerLinkActive="active" class="nav-link"> Add Patient </a>
+        </li>
+
+        
+    <li class="nav-item">
+
+        <a style="font-weight: 744; font-size: x-large;"  routerLink="appointments" routerLinkActive="active" class="nav-link">Appointment List</a>
+        </li>
+    
+        <li class="nav-item">
+    
+        <a style="font-weight: 744; font-size: x-large;"  routerLink="create-appointment" routerLinkActive="active" class="nav-link"> Add Appointment </a>
+            </li>
+    
+      
+    
+
+    </ul>
+</nav>
+
+
+<h1 class="text-center"> {{title}}</h1>
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+<footer class="footer">
+    <div class="container">
+
+    <span style="font-weight: 700; font-size: 120%;">Developed By: Herbert James</span>
+
+    </div>
+
+</footer>
