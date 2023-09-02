@@ -3,46 +3,50 @@ import { Patient } from '../patient';
 import { PatientService } from '../patient.service';
 import { Router } from '@angular/router';
 @Component({
-selector: 'app-patient-list',
-templateUrl: './patient-list.component.html',
-styleUrls: ['./patient-list.component.css']
+    selector: 'app-patient-list',
+    templateUrl: './patient-list.component.html',
+    styleUrls: ['./patient-list.component.css']
 })
 export class PatientListComponent implements OnInit {
 
-patients: Patient[] = [];
+    //Creating Patient Property
+    patients: Patient[] = [];
 
-constructor(private patientService: PatientService, 
-    private router: Router ) { }
+    //Injecting PatientService and Router
+    constructor(private patientService: PatientService,
+        private router: Router) { }
 
-ngOnInit(): void {
-this.getPatients();
-}
+    //In Angular ngOnInit is a lifecycle hook. After the constructor has been called and the component's inputs have been initialized, ngOnInit is called
+    //ngOnInit is useful for performing any extra initialization that is vital for the component
+    ngOnInit(): void {
+        this.getPatients();
+    }
 
-private getPatients() {
-this.patientService.getPatientsList().subscribe(data => {
-this.patients = data;
-});
+    private getPatients() {
+        this.patientService.getPatientsList().subscribe(data => {
+            this.patients = data;
+        });
 
-}
+    }
 
-patientDetails(patientId: number){
+    patientDetails(patientId: number) {
 
-this.router.navigate(['patient-details', patientId]);
+        this.router.navigate(['patient-details', patientId]);
 
-}
+    }
 
-updatePatient(patientId: number){
+    updatePatient(patientId: number) {
 
-this.router.navigate(['update-patient', patientId]);
-}
+        this.router.navigate(['update-patient', patientId]);
+    }
 
-deletePatient(patientId: number){
+    deletePatient(patientId: number) {
 
- this.patientService.deletePatient(patientId).subscribe(data => {
- console.log(data);
- this.getPatients();
+        this.patientService.deletePatient(patientId).subscribe(data => {
+            console.log(data);
+            this.getPatients();
 
- }) 
-}
+        })
+    }
 
 }

@@ -1,77 +1,63 @@
+<!--Creating a form where the user can update the patient's appointment details-->
 <div class="col-md-6 offset-md-3">
-<h2>Update Patient's Appointment</h2>
-<form (ngSubmit) = "onSubmit()">
+     <h2>Update Patient's Appointment</h2>
+     <form (ngSubmit)="onSubmit()">
 
-<div class="form-group">
+          <div class="form-group">
 
-<label style="font-weight: 600;">Patient Name</label>
-<input type="text" class="form-control" id="patientName"
-     [(ngModel)]="appointment.patientName" name="patientName" placeholder="Patient Name">
+               <label style="font-weight: 600;">Patient Name</label>
+               <input type="text" class="form-control" id="patientName" [(ngModel)]="appointment.patientName"
+                    name="patientName" placeholder="Patient Name">
 
-</div>
+          </div>
 
-<br>
+          <br>
 
-<div class="form-group">
+          <div class="form-group">
 
-    <label style="font-weight: 600;">Doctor Name</label>
-    <input type="text" class="form-control" id="doctorName"
-         [(ngModel)]="appointment.doctorName" name="doctorName" placeholder="Doctor Name">
-    
-    </div>
+               <label style="font-weight: 600;">Doctor Name</label>
+               <input type="text" class="form-control" id="doctorName" [(ngModel)]="appointment.doctorName"
+                    name="doctorName" placeholder="Doctor Name">
 
-    <br>
+          </div>
 
-    <div class="form-group">
+          <br>
 
-        <label style="font-weight: 600;">Appointment Date</label>
-        <input type="text" class="form-control" id="appointmentDate"
-             [(ngModel)]="appointment.appointmentDate" name="appointmentDate" placeholder="Appointment Date">
-        
-        </div>
+          <div class="form-group">
 
-        <br>
+               <label style="font-weight: 600;">Appointment Date</label>
+               <input type="text" class="form-control" id="appointmentDate" [(ngModel)]="appointment.appointmentDate"
+                    name="appointmentDate" placeholder="Appointment Date">
 
-        <div class="form-group">
+          </div>
 
-            <label style="font-weight: 600;">Appointment Time</label>
-            <input type="text" class="form-control" id="appointmentTime"
-                 [(ngModel)]="appointment.appointmentTime" name="appointmentTime" placeholder="Appointment Time">
-            
-            </div>
+          <br>
 
-            <br>
+          <div class="form-group">
 
-            <div class="form-group">
+               <label style="font-weight: 600;">Appointment Time</label>
+               <input type="text" class="form-control" id="appointmentTime" [(ngModel)]="appointment.appointmentTime"
+                    name="appointmentTime" placeholder="Appointment Time">
 
-                <label style="font-weight: 600;">Appointment Reason</label>
-                <input type="text" class="form-control" id="appointmentReason"
-                     [(ngModel)]="appointment.appointmentReason" name="appointmentReason" placeholder="Appointment Reason">
-                
-                </div>
+          </div>
 
-                <br>
+          <br>
 
-                <button class="btn btn-primary" type="submit">Submit</button>
-                
-            
+          <div class="form-group">
 
-</form>
+               <label style="font-weight: 600;">Appointment Reason</label>
+               <input type="text" class="form-control" id="appointmentReason"
+                    [(ngModel)]="appointment.appointmentReason" name="appointmentReason"
+                    placeholder="Appointment Reason">
 
-<br>
+          </div>
+
+          <br>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
 
 
 
- 
+     </form>
 
-
-
-
-
-
-<!-- appointmentId: number = 0;
-patientName: String = '';
-doctorName: String = '';
-appointmentDate: Date = new Date();
-appointmentTime: String = '';
-appointmentReason: String = ''; -->
+     <br>

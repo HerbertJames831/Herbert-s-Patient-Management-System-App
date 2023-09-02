@@ -7,16 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurrentDateandtimeComponent implements OnInit {
 
+  current_DateandTime: Date = new Date();
 
-current_DateandTime: Date = new Date();
+  constructor() { }
 
-constructor() { }
+  //In Angular ngOnInit is a lifecycle hook. After the constructor has been called and the component's inputs have been initialized, ngOnInit is called
+  //ngOnInit is key for performing any extra initialization that is vital for the component
+  ngOnInit(): void {
 
-ngOnInit(): void {
-  
-}
+  }
 
-
-
-  
 }

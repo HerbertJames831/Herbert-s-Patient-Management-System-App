@@ -1,70 +1,63 @@
+<!--Creating a form where the user can create the patient's appointment details-->
 <div class="col-md-6 offset-md-3">
-    <h2>Create Patient's Appointment</h2>
-    <form (ngSubmit) = "onSubmit()">
-    
-    <div class="form-group">
-    
-    <label style="font-weight: 600;">Patient Name</label>
-    <input type="text" class="form-control" id="patientName"
-         [(ngModel)]="appointment.patientName" name="patientName" placeholder="Patient Name">
-    
-    </div>
-    
-    <br>
-    
-    <div class="form-group">
-    
-        <label style="font-weight: 600;">Doctor Name</label>
-        <input type="text" class="form-control" id="doctorName"
-             [(ngModel)]="appointment.doctorName" name="doctorName" placeholder="Doctor Name">
-        
-        </div>
-    
-        <br>
-    
-        <div class="form-group">
-    
-            <label style="font-weight: 600;">Appointment Date</label>
-            <input type="text" class="form-control" id="appointmentDate"
-                 [(ngModel)]="appointment.appointmentDate" name="appointmentDate" placeholder="Appointment Date">
-            
-            </div>
-    
-            <br>
-    
-            <div class="form-group">
-    
-                <label style="font-weight: 600;">Appointment Time</label>
-                <input type="text" class="form-control" id="appointmentTime"
-                     [(ngModel)]="appointment.appointmentTime" name="appointmentTime" placeholder="Appointment Time">
-                
-                </div>
-    
-                <br>
-    
-                <div class="form-group">
-    
-                    <label style="font-weight: 600;">Appointment Reason</label>
-                    <input type="text" class="form-control" id="appointmentReason"
-                         [(ngModel)]="appointment.appointmentReason" name="appointmentReason" placeholder="Appointment Reason">
-                    
-                    </div>
-    
-                    <br>
-    
-                    <button class="btn btn-primary" type="submit">Submit</button>
-                    
-                
-    
-    </form>
-    
-    <br>
-    
+     <h2>Create Patient's Appointment</h2>
+     <form (ngSubmit)="onSubmit()">
 
-    <!-- appointmentId: number = 0;
-    patientName: String = '';
-    doctorName: String = '';
-    appointmentDate: Date = new Date();
-    appointmentTime: String = '';
-    appointmentReason: String = ''; -->
-    
+          <div class="form-group">
+
+               <label style="font-weight: 600;">Patient Name</label>
+               <input type="text" class="form-control" id="patientName" [(ngModel)]="appointment.patientName"
+                    name="patientName" placeholder="Patient Name">
+
+          </div>
+
+          <br>
+
+          <div class="form-group">
+
+               <label style="font-weight: 600;">Doctor Name</label>
+               <input type="text" class="form-control" id="doctorName" [(ngModel)]="appointment.doctorName"
+                    name="doctorName" placeholder="Doctor Name">
+
+          </div>
+
+          <br>
+
+          <div class="form-group">
+
+               <label style="font-weight: 600;">Appointment Date</label>
+               <input type="text" class="form-control" id="appointmentDate" [(ngModel)]="appointment.appointmentDate"
+                    name="appointmentDate" placeholder="Appointment Date">
+
+          </div>
+
+          <br>
+
+          <div class="form-group">
+
+               <label style="font-weight: 600;">Appointment Time</label>
+               <input type="text" class="form-control" id="appointmentTime" [(ngModel)]="appointment.appointmentTime"
+                    name="appointmentTime" placeholder="Appointment Time">
+
+          </div>
+
+          <br>
+
+          <div class="form-group">
+
+               <label style="font-weight: 600;">Appointment Reason</label>
+               <input type="text" class="form-control" id="appointmentReason"
+                    [(ngModel)]="appointment.appointmentReason" name="appointmentReason"
+                    placeholder="Appointment Reason">
+
+          </div>
+
+          <br>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+
+
+
+     </form>
+
+     <br>

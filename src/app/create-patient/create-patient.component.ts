@@ -9,41 +9,40 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-patient.component.css']
 })
 export class CreatePatientComponent implements OnInit {
+  //Creating Patient Property
+  patient: Patient = new Patient();
+  //Injecting PatientService and Router
+  constructor(private patientService: PatientService,
+    private router: Router) { }
 
-patient: Patient = new Patient();
+  //In Angular ngOnInit is a lifecycle hook. After the constructor has been called and the component's inputs have been initialized, ngOnInit is called
+  //ngOnInit is needed for performing any extra initialization that is significant for the component
+  ngOnInit(): void {
 
-constructor(private patientService: PatientService,
-  private router: Router) {}
+  }
 
+  savePatient() {
 
-ngOnInit(): void {
-  
-}
+    this.patientService.createPatient(this.patient).subscribe(data => {
+      console.log(data);
+      this.goToPatientList();
+    },
+      error => console.log(error));
 
-savePatient(){
+  }
 
-this.patientService.createPatient(this.patient).subscribe(data =>{
-console.log(data);
-this.goToPatientList();
-},
-error => console.log(error));
+  goToPatientList() {
+    this.router.navigate(['/patients']);
 
-}
-
-goToPatientList(){
-  this.router.navigate(['/patients']);
-
-}
-
-
-onSubmit(){
-
-  console.log(this.patient);
-  this.savePatient();
+  }
 
 
-}
+  onSubmit() {
+
+    console.log(this.patient);
+    this.savePatient();
 
 
+  }
 
 }

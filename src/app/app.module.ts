@@ -16,26 +16,27 @@ import { CreateAppointmentComponent } from './create-appointment/create-appointm
 import { CurrentDateandtimeComponent } from './current-dateandtime/current-dateandtime.component';
 
 @NgModule({
-declarations: [
-AppComponent,
-PatientListComponent,
-CreatePatientComponent,
-UpdatePatientComponent,
-PatientDetailsComponent,
-UpdateAppointmentComponent,
-AppointmentListComponent,
-AppointmentDetailsComponent,
-CreateAppointmentComponent,
-CurrentDateandtimeComponent
-],
-imports: [
-BrowserModule,
-AppRoutingModule,
-HttpClientModule,
-FormsModule,
-CommonModule
-],
-providers: [],
-bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        PatientListComponent,
+        CreatePatientComponent,
+        UpdatePatientComponent,
+        PatientDetailsComponent,
+        UpdateAppointmentComponent,
+        AppointmentListComponent,
+        AppointmentDetailsComponent,
+        CreateAppointmentComponent,
+        CurrentDateandtimeComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        //CommonModule is benefical in Angular because all the fundamental Angular directives and pipes are exported
+        FormsModule,
+        CommonModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

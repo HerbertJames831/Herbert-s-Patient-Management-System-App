@@ -1,101 +1,89 @@
+<!--Creating a form where the user can create the patient's details-->
 <div class="col-md-6 offset-md-3">
-<h2>Create Patient</h2>
-<form (ngSubmit) = "onSubmit()">
+    <h2>Create Patient</h2>
+    <form (ngSubmit)="onSubmit()">
 
-<div class="form-group">
+        <div class="form-group">
 
-    <label style="font-weight: 600; " >First Name</label>
-    <input type="text" class="form-control" id="firstName"
-         [(ngModel)] = "patient.firstName"  name="firstName" placeholder="First Name">
+            <label style="font-weight: 600; ">First Name</label>
+            <input type="text" class="form-control" id="firstName" [(ngModel)]="patient.firstName" name="firstName"
+                placeholder="First Name">
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<div class="form-group">
+        <div class="form-group">
 
-    <label style="font-weight: 600;">Last Name</label>
-    <input type="text" class="form-control" id="lastName"
-         [(ngModel)] = "patient.lastName"  name="lastName" placeholder="Last Name">
+            <label style="font-weight: 600;">Last Name</label>
+            <input type="text" class="form-control" id="lastName" [(ngModel)]="patient.lastName" name="lastName"
+                placeholder="Last Name">
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<div class="form-group">
+        <div class="form-group">
 
-    <label style="font-weight: 600;">Gender</label>
-    <input type="text" class="form-control" id="gender"
-         [(ngModel)] = "patient.gender"  name="gender" placeholder="Gender">
+            <label style="font-weight: 600;">Gender</label>
+            <input type="text" class="form-control" id="gender" [(ngModel)]="patient.gender" name="gender"
+                placeholder="Gender">
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<div class="form-group">
+        <div class="form-group">
 
-    <label style="font-weight: 600;">Date of Birth</label>
-    <input type="text" class="form-control" id="dateOfBirth"
-         [(ngModel)] = "patient.dateOfBirth"  name="dateOfBirth" placeholder="Date of Birth">
+            <label style="font-weight: 600;">Date of Birth</label>
+            <input type="text" class="form-control" id="dateOfBirth" [(ngModel)]="patient.dateOfBirth"
+                name="dateOfBirth" placeholder="Date of Birth">
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<div class="form-group">
+        <div class="form-group">
 
-    <label style="font-weight: 600;">Mobile Number</label>
-    <input type="text" class="form-control" id="mobileNumber"
-         [(ngModel)] = "patient.mobileNumber"  name="mobileNumber" placeholder="Mobile Number">
+            <label style="font-weight: 600;">Mobile Number</label>
+            <input type="text" class="form-control" id="mobileNumber" [(ngModel)]="patient.mobileNumber"
+                name="mobileNumber" placeholder="Mobile Number">
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<div class="form-group">
+        <div class="form-group">
 
-    <label style="font-weight: 600;">Email Address</label>
-    <input type="text" class="form-control" id="emailAddress"
-         [(ngModel)] = "patient.emailAddress"  name="emailAddress" placeholder="Email Address">
+            <label style="font-weight: 600;">Email Address</label>
+            <input type="text" class="form-control" id="emailAddress" [(ngModel)]="patient.emailAddress"
+                name="emailAddress" placeholder="Email Address">
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<div class="form-group">
+        <div class="form-group">
 
-    <label style="font-weight: 600;">Address</label>
-    <input type="text" class="form-control" id="address"
-         [(ngModel)] = "patient.address"  name="address" placeholder="Address">
+            <label style="font-weight: 600;">Address</label>
+            <input type="text" class="form-control" id="address" [(ngModel)]="patient.address" name="address"
+                placeholder="Address">
 
-</div>
+        </div>
 
-<br>
-<div class="form-group">
+        <br>
+        <div class="form-group">
 
-    <label style="font-weight: 600;">Medical History</label>
-    <input type="text" class="form-control" id="medicalHistory"
-         [(ngModel)] = "patient.medicalHistory"  name="medicalHistory" placeholder="Medical History">
+            <label style="font-weight: 600;">Medical History</label>
+            <input type="text" class="form-control" id="medicalHistory" [(ngModel)]="patient.medicalHistory"
+                name="medicalHistory" placeholder="Medical History">
 
-</div>
+        </div>
 
-<br>
+        <br>
 
-<button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="submit">Submit</button>
 
-</form>
+    </form>
 
-<br>
-
-
-
-
-<!-- patientId: number = 0;
-firstName: string = '';
-lastName: string = '';
-gender: string = '';
-dateOfBirth: Date = new Date();
-mobileNumber: string = '';
-emailAddress: string = '';
-address: string = '';
-medicalHistory: string = ''; -->
+    <br>
